@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Demon Slayer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class=" position-fixed w-100">
+
+      <div class="center-cont  container h-100 py-3 d-flex justify-content-between align-items-center">
+        <button class="navbar-toggler navbar-dark d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="cont-login-search-nav    gap-4  collapse  " id="navbarContent">
+          <div class="cont-login-search    d-flex gap-3 h-100" >
+
+            <button type="button" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#myModal">
+              Log in
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header bg-primary text-light">
+                    <h4 class="modal-title">Log In</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                  </div>
+                  <form action="#" class=" text-capitalize">
+                    <div class="padd-x px-3">
+                      <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="pwd" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                      </div>
+                      <a href="#" class="text-decoration-none ">forgot password ?</a>
+                      <div class="cont-rem my-3 d-flex justify-content-between">
+                        <label class="form-check-label" for="remember">
+                          Remember me
+                        </label>
+                        <input class="form-check-input h-auto" type="checkbox" id="remember" name="remember">
+                      </div>
+                      <button type="submit" class="btn btn-primary w-100">Log In</button>
+                      <div class="new-acc text-center mt-4 mb-3">
+                        don't have an account? <a href="#">create a new account</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>  
+            </div>
+            <div class="search-box ">
+              <label for="search" class="search text-center p-2 rounded-3" >search</label>
+              <input type="search" id="search" placeholder="Explore..." class="px-3  rounded-5">
+            </div>
+          </div>
+
+          <ul class="links   d-flex list-unstyled gap-3 w-auto my-2 text-capitalize">
+            <li>home</li>
+            <li>characters</li>
+            <li>hashira</li>
+            <li>demons</li>
+            <li class="dropdown">
+              <p class="dropdown-toggle" data-bs-toggle="dropdown">story</p>
+              <ul class="dropdown-menu bg-black border-3 border-info rounded-4">
+                <li><a href="#" class=" dropdown-item bg-transparent  fw-bold">final selection <span>arc</span></a></li>
+                <li><a href="#" class=" dropdown-item bg-transparent  fw-bold">mugen train <span>arc</span></a></li>
+                <li><a href="#" class=" dropdown-item bg-transparent  fw-bold">entertainment district <span>arc</span></a></li>
+                <li><a href="#" class=" dropdown-item bg-transparent  fw-bold">swordsmith village <span>arc</span></a></li>
+                <li><a href="#" class=" dropdown-item bg-transparent  fw-bold">hashira training <span>arc</span></a></li>
+                <li><a href="#" class=" dropdown-item bg-transparent  fw-bold">infinity castle <span>arc</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="logo ">
+          <img src="imgs/logo.jpg" alt="logo">
+        </div>
+      </div>
+    </header>
+
+    <!-- ===============================================// main-section \\=============================================== -->
+    <main class="main-sec">
+      <div class="main-overlay h-100">
+        <div class="content-parent text-light text-capitalize text-center">
+          <h1 class="mb-2">demon Slayer</h1>
+          <p class="mb-2">discover the world of demon slayers, powerful demons, and unforgettable battles. where courage, sacrifice, and determination stand against darkness.</p>
+          <button class="px-3 py-2 rounded-5 mt-2">ENTER THE WORLD &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="icons-parent d-flex flex-column gap-3">
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===============================================// Sec-2 \\=============================================== -->
+
+    <section class="section-2 container mt-5 text-capitalize">
+      <h1 class="sec2-title text-center my-2
+      ">featured characters</h1>
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner rounded-4">
+          <div class="carousel-item active">
+            <img src="imgs/tanjiro1.jpg" alt="Los Angeles" class="d-block w-100" >
+            <div class="carousel-caption">
+              <h2 class="tanjiro">tanjiro kamado</h2>
+              <p><span class="sun">sun breathing</span> - kind, determined, and compassionate.</p>
+              <button class="btn btn-danger border-white border-2 rounded-3 text-capitalize">discover more</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/giyu tomioka-e.jpg" alt="Chicago" class="d-block w-100" >
+            <div class="carousel-caption">
+              <h2 class="giyu">giyu tomioka</h2>
+              <p><span class="water">water breathing</span> - calm, skilled, and reserved.</p>
+              <button class="btn btn-danger border-white border-2 rounded-3 text-capitalize">discover more</button>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/zenitsu-e.jpg" alt="New York" class="d-block w-100" >
+            <div class="carousel-caption">
+              <h2 class="zenitsu">zenitsu agatsuma</h2>
+              <p><span class="thunder">thunder breathing</span> - fearful, talented, and unpredictable.</p>
+              <button class="btn btn-danger border-white border-2 rounded-3 text-capitalize">discover more</button>
+            </div>  
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/shinobu-e.jpg" alt="New York" class="d-block w-100" >
+            <div class="carousel-caption">
+              <h2 class="shinobu">shinobu kocho</h2>
+              <p style="color: black;"><span class="insect">insect breathing</span> - graceful, clever, and relentless.</p>
+              <button class="btn btn-danger border-white border-2 rounded-3 text-capitalize">discover more</button>
+            </div>  
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+    </section>
+    <!-- ===============================================// Sec-3 \\=============================================== -->
+
+    <section class="section-3 bg-danger-subtle mt-5 container text-capitalize">
+
+      <h1 class="my-4 text-center">top hashira</h1>
+      <div class="cards-cont  d-flex justify-content-between gap-3">
+        <div class="cards card-1 text-center w-100 ">
+          <div class="overlay-3">
+            <div class="content-cont ">
+              <h3>sanemi shinazugawa</h3>
+              <h5>wind hashira</h5>
+              <p>Fierce and relentless, striking with the speed and fury of the wind.</p>
+              <a href="#"><button class="btnn  fw-bold">Discover More</button></a> 
+            </div>
+          </div>
+        </div>
+        <div class="cards card-2 text-center w-100 ">
+          <div class="overlay-3">
+            <div class="content-cont">
+              <h3>gyomei himejima</h3>
+              <h5>stone hashira</h5>
+              <p>A towering warrior with unmatched strength and an unshakable spirit.</p>
+              <a href="#"><button class="btnn  fw-bold">Discover More</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="cards card-3 text-center w-100 ">
+          <div class="overlay-3">
+            <div class="content-cont">
+              <h3>giyu tomioka</h3>
+              <h5>water hashira</h5>
+              <p>Calm and precise, flowing through battle with effortless skill.</p>
+              <a href="#"><button class="btnn  fw-bold">Discover More</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- ===============================================// Sec-4 \\=============================================== -->
+
+    <div class="sec-4-parent">
+      <h1 class="text-center text-capitalize">overviwe of the arcs</h1>
+      <section class="section-4  position-relative">
+        <div class="sec-4-overlay  position-absolute ">
+
+        <div class="accordion accordion-flush border-2 border-light border rounded-3" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                final selection arc
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">tanjiro faces the final selection and begins his journey as a <span>demon slayer.</span></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                mugen train arc
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">tanjiro and his friends board the mugen train, where they fight alongside <span>rengoku,the flame hashira.</span></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                entertainment district arc
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">tanjiro and his allies enter the entertainment district and face alongside <span>tengen, the sound hashira</span> against the upper rank six demon.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                swordsmith village arc
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">tanjiro travels to the swordsmith village, where a new battle against powerful demons begins<span></span></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                hashira training arc
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">the demon slayer crops undergoes intense trainings to prepare for the final battle.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+                infinity castle arc
+              </button>
+            </h2>
+            <div id="flush-collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">the demon slayer crops are pulled into the <span>infinity castle</span> for a decisive battle against <span>muzan and the upper rank demons.</span></div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+    </section>
+    </div>
+    <!-- ===============================================// Sec-5 \\=============================================== -->
+
+    <section class="section-5 container">
+      <h1 class="text-center text-capitalize my-4">top upper demons</h1>
+      <div class="cards-parent-5 d-flex flex-column flex-md-row justify-content-between gap-3  w-100 h-75 h-md-75">
+
+        <div class="demon-card doma text-capitalize w-100 rounded-4 position-relative ">
+          <div class="overlay-5 rounded-4">
+            <div class="content-parent-5 text-light text-center">
+              <div class="circle-img doma-c-i"></div>
+              <h3>doma</h3>
+              <h6>upper rank demon two</h6>
+              <p>age : 284 year</p>
+            </div>
+          </div>
+        </div>
+        <div class="demon-card kokushibo text-capitalize w-100 rounded-4 position-relative ">
+          <div class="overlay-5 rounded-4">
+            <div class="content-parent-5 text-light text-center">
+              <div class="circle-img kokushibo-c-i"></div>
+              <h3>kokushibo</h3>
+              <h6>upper rank demon one</h6>
+              <p>age : 436 year</p>
+            </div>
+          </div>
+        </div>
+        <div class="demon-card akaza w-100 text-capitalize rounded-4 position-relative ">
+          <div class="overlay-5 rounded-4">
+            <div class="content-parent-5 text-light text-center">
+              <div class="circle-img akaza-c-i"></div>
+              <h3>akaza</h3>
+              <h6>upper rank demon three</h6>
+              <p>age : 176 year</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ===============================================// Sec-6 \\=============================================== -->
+
+    <section class="section-6 container mt-5">
+      <h1 class="text-center text-capitalize">best battles <i class="fa-brands fa-battle-net fa-spin" style="color: orangered;"></i></h1>
+      <div class="conts-parent-6 d-flex flex-column gap-4">
+        <div class="container-6 d-flex gap-4">
+          <div class="right-img ri-1"></div>
+          <div class="content-parent-6 pt-3 text-capitalize text-light">
+            <h4>mugen train - rengoku vs akaza</h4>
+            <p>flame hashira vs upper rank demon three</p>
+            <p class="font-monospace p2" style="font-size: 18px;">Rengoku faces Akaza in a fierce battle after the events aboard the Mugen Train.</p>
+            <div class="three-btns">
+              <button class="btn borde border-2 border-light rounded-3 bg-info text-light text-capitalize">watche battle</button>
+              <button class="btn borde border-2 border-light rounded-3 bg-secondary text-light text-capitalize">characters</button>
+              <button class="btn borde border-2 border-light rounded-3 bg-black text-light text-capitalize">arc info</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-6 d-flex gap-4">
+          <div class="right-img ri-2"></div>
+          <div class="content-parent-6 pt-3 text-capitalize text-light">
+            <h4>entertainment district - tengen vs gyutaro</h4>
+            <p>sound hashira vs upper rank demon six</p>
+            <p class="font-monospace p2" style="font-size: 18px;">Tengen and Tanjiro fight Gyutaro and Daki in a desperate battle across the Entertainment District.</p>
+            <div class="three-btns">
+              <button class="btn borde border-2 border-light rounded-3 bg-info text-light text-capitalize">watche battle</button>
+              <button class="btn borde border-2 border-light rounded-3 bg-secondary text-light text-capitalize">characters</button>
+              <button class="btn borde border-2 border-light rounded-3 bg-black text-light text-capitalize">arc info</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-6 d-flex gap-4">
+          <div class="right-img ri-3"></div>
+          <div class="content-parent-6 pt-3 text-capitalize text-light">
+            <h4>infinity castle - tanjiro & giyu vs akaza</h4>
+            <p>tanjiro and water hashira vs upper rank demon three</p>
+            <p class="font-monospace p2" style="font-size: 18px;">Tanjiro and Giyu face Akaza inside the Infinity Castle in a decisive battle against Upper Rank Three.</p>
+            <div class="three-btns">
+              <button class="btn borde border-2 border-light rounded-3 bg-info text-light text-capitalize">watche battle</button>
+              <button class="btn borde border-2 border-light rounded-3 bg-secondary text-light text-capitalize">characters</button>
+              <button class="btn borde border-2 border-light rounded-3 bg-black text-light text-capitalize">arc info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============================================// contact \\=============================================== -->
+    <div class="contact-parent mt-5 ">
+      <h2 class="text-center text-capitalize my-5">follow the demon slayer world</h2>
+      <div class="cont-contact d-flex justify-content-center flex-column flex-md-row gap-5">
+        <div class="contact1 d-flex gap-2 bg-light">
+          <i class="fa-brands fa-square-instagram" style="color: #ff5100;"></i>
+          <h6>follow our latest updates</h6>
+        </div>
+        <div class="contact1 d-flex gap-2 bg-light">
+          <i class="fa-brands fa-facebook" style="color: cyan;"></i>
+          <h6>join the demon slayer community</h6>
+        </div>
+        <div class="contact1 d-flex gap-2 bg-light">
+          <i class="fa-brands fa-square-x-twitter" style="color: gray;"></i>
+          <h6>stay updated with the latest news</h6>
+        </div>
+        <div class="contact1 d-flex gap-2 bg-light">
+          <i class="fa-brands fa-youtube" style="color: red;"></i>
+          <h6>watche battles and episodes</h6>
+        </div>
+      </div>
+    </div>
+    <!-- ===============================================// footer \\=============================================== -->
+    <!-- <footer class="footer bg-danger">
+
+    </footer> -->
+
+  <footer class="footer bg-black text-light text-capitalize">
+    <div class="footer-parent container d-flex justify-content-between gap-5">
+      <div class="footer-box">
+        <h4>our world</h4>
+        <p>Explore the greatest battles.</p>
+        <p>Discover powerful Hashira.</p>
+        <p>Meet the Upper Rank Demons.</p>
+      </div>
+      <div class="footer-box">
+        <h4>important links</h4>
+        <a href="#">home</a>
+        <a href="#">characters</a>
+        <a href="#">hashira</a>
+        <a href="#">demons</a>
+        <a href="#">story</a>
+      </div>
+
+      <div class="footer-box footer-logo">
+        <img src="imgs/logo.jpg" alt="Demon Slayer Logo">
+        <h4>demon slayer</h4>
+        <p>
+          Enter the world of Demon Slayers, Hashira, and Upper Rank Demons.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>© 2026 Demon Slayer — All Rights Reserved</p>
+      <h3 class="text-capitalize" style="color: cyan;">designed by khaled</h3>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
