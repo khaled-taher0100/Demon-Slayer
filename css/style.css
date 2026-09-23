@@ -320,7 +320,6 @@ form{
     font: italic 900 clamp(1.6rem , 5vw , 3rem) 'Courier New', Courier, monospace;
 }
 .cards{
-    background-color: salmon;
     height: 400px;
     position: relative;
     border-top-right-radius: 35%;
