@@ -650,7 +650,7 @@ form{
     color: cyan;
 }
 .cont-contact a{
-    text-decoration: 0;
+    text-decoration: 0; 
     color: #000;
 }
 .contact1:hover{
