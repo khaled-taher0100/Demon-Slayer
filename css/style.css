@@ -649,6 +649,10 @@ form{
     align-content: center;
     color: cyan;
 }
+.cont-contact a{
+    text-decoration: 0;
+    color: #000;
+}
 .contact1:hover{
     transform: translatey(-15px);
 }
